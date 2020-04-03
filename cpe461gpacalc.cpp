@@ -1,3 +1,8 @@
+/*
+A little test run project on the gpacalculator in order to implement for the cgpa actual assignment
+*/
+
+
 #include <iostream>
 #include<cstring>
 using namespace std;
