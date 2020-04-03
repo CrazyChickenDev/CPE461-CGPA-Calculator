@@ -46,3 +46,21 @@ class App:
 			self.btn_1.config(state = DISABLED)
 		else:
 			tkMessageBox.showinfo("Hey ! ", "Enter a Valid Value")
+            
+    def calc_CG(self):
+		print("Calculating!")
+		credits_this_sem = 0
+		units_this_sem = 0
+		for j in range (0,self.num_courses):
+			credits_this_sem = credits_this_sem + int(self.units_list[j].get())*(self.grade(self.grades_list[j].get()))
+			units_this_sem = units_this_sem + int(self.units_list[j].get())
+		final_cgpa = (credits_this_sem + float(self.entry_1.get())*int(self.entry_2.get())) / (units_this_sem+int(self.entry_2.get()))
+		tkMessageBox.showinfo("Predicted CGPA ", str(final_cgpa))	
+		
+
+	def grade(self,grd):
+    		dict_ = {'A':10,'A-':9,'B':8,'B-':7,'C':6,'C-':5,'D':4,'E':2}
+		return dict_[grd]
+root=Tk()
+app = App(root)
+root.mainloop()
