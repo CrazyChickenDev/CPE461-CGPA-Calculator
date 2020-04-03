@@ -70,7 +70,7 @@ def pressCalculate():
 if __name__=="__main__":
 	root = Tk()
 	root.resizable(0,0)
-	root.title("Shaonty's GPA Calculator")
+	root.title("CrazyChicken's GPA Calculator")
 
 	#for sub 1
 	#subject name
