@@ -17,33 +17,22 @@ def persub(name,r,c):
 
 def setValue(content1,content2):
 	global cr
-	if content1 =="A+":
-		l1.append(4*float(content2))
-		cr+=float(content2)
-	elif content1=="A":
-		l1.append(3.75*float(content2))
-		cr+=float(content2)
-	elif content1=="A-":
-		l1.append(3.50*float(content2))
-		cr+=float(content2)
-	elif content1=="B+":
-		l1.append(3.25*float(content2))
+	if content1 =="A":
+		l1.append(5*float(content2))
 		cr+=float(content2)
 	elif content1=="B":
-		l1.append(3.00*float(content2))
-		cr+=float(content2)
-	elif content1=="B-":
-		l1.append(2.75*float(content2))
-		cr+=float(content2)
-	elif content1=="C+":
-		l1.append(2.50*float(content2))
+		l1.append(4*float(content2))
 		cr+=float(content2)
 	elif content1=="C":
-		l1.append(2.25*float(content2))
+		l1.append(3*float(content2))
 		cr+=float(content2)
 	elif content1=="D":
-		l1.append(2.00*float(content2))	
+		l1.append(2*float(content2))
 		cr+=float(content2)
+	elif content1=="F":
+		l1.append(0*float(content2))
+		cr+=float(content2)
+	
 						
 def clear():
      exit()
@@ -60,6 +49,7 @@ def pressCalculate():
 	setValue(s6.cget("text"),c6.cget("text"))
 	setValue(s7.cget("text"),c7.cget("text"))
 	setValue(s8.cget("text"),c8.cget("text"))
+	setValue(s9.cget("text"),c9.cget("text"))
 	for i in l1:
 		sum+=float(i)
 	lastCgpa = sum/float(cr)	
@@ -70,44 +60,45 @@ def pressCalculate():
 if __name__=="__main__":
 	root = Tk()
 	root.resizable(0,0)
-	root.title("Shaonty's GPA Calculator")
+	root.title("CrazyChickenDev's GPA Calculator with Tkinker Implementation")
 
 	#for sub 1
 	#subject name
-	persub("Subject 1",2,0)
+	persub("CPE311",2,0)
 	
 	#drop down menu of grade point
 	defaltgrd="Grade" 
 	var1 = StringVar(root)
-	grade = ("A+","A","A-","B+","B","B-","C+","C","D","None")
+	grade = ("A","B","C","D","None")
 	
 	s1 = apply(OptionMenu,(root,var1)+grade)
 	var1.set(defaltgrd)
-	s1.grid(padx=5,pady=10,row=2,column=1)
-	#credit pe hour
-	var2 = StringVar(root)
+	s1.grid(padx=5,pady=5,row=2,column=1)
 	
-	credit = [0,1,2,3,4,5,6]
+	#credit per hour
+	var2 = StringVar(root)
+	credit = [1,2,3,4]
 	c1 = OptionMenu(root,var2,*credit)
 	var2.set("Credit Hour")
-	c1.grid(padx=10,pady=10,row=2,column=2)	
+	c1.grid(padx=10,pady=10,row=2,column=2)
+		
 	#for sub 2
 	#subject name
-	persub("Subject 2",3,0)
+	persub("CPE3",3,0)
 	
 	#drop down menu of grade point
 	defaltgrd="Grade" 
 	var1 = StringVar(root)
-	grade = ("A+","A","A-","B+","B","B-","C+","C","D","None")
+	grade = ("A","B","C","D","None")
 	
 	s2 = apply(OptionMenu,(root,var1)+grade)
 	var1.set(defaltgrd)
-	s2.grid(padx=5,pady=10,row=3,column=1)
+	s2.grid(padx=5,pady=5,row=3,column=1)
 	var1.set(defaltgrd)
 	#credit pe hour
 	var2 = StringVar(root)
 	
-	credit = [0,1,2,3,4,5,6]
+	credit = [1,2,3,4]
 	c2 = OptionMenu(root,var2,*credit)
 	var2.set("Credit Hour")
 	c2.grid(padx=10,pady=10,row=3,column=2)	
@@ -118,14 +109,14 @@ if __name__=="__main__":
 	#drop down menu of grade point
 	defaltgrd="Grade" 
 	var1 = StringVar(root)
-	grade = ("A+","A","A-","B+","B","B-","C+","C","D","None")
+	grade = ("A","B","C","D","None")
 	s3 = apply(OptionMenu,(root,var1)+grade)
 	var1.set(defaltgrd)
-	s3.grid(padx=5,pady=10,row=4,column=1)
+	s3.grid(padx=5,pady=5,row=4,column=1)
 	#credit pe hour
 	var2 = StringVar(root)
 	
-	credit = [0,1,2,3,4,5,6]
+	credit = [1,2,3,4]
 	c3 = OptionMenu(root,var2,*credit)
 	var2.set("Credit Hour")
 	c3.grid(padx=10,pady=10,row=4,column=2)	
@@ -136,13 +127,14 @@ if __name__=="__main__":
 	#drop down menu of grade point
 	defaltgrd="Grade" 
 	var1 = StringVar(root)
-	grade = ("A+","A","A-","B+","B","B-","C+","C","D","None")
+	grade = ("A","B","C","D","None")
+	
 	s4 = apply(OptionMenu,(root,var1)+grade)
 	var1.set(defaltgrd)
-	s4.grid(padx=5,pady=10,row=5,column=1)
+	s4.grid(padx=5,pady=5,row=5,column=1)
 	#credit pe hour
 	var2 = StringVar(root)
-	credit = [0,1,2,3,4,5,6]
+	credit = [1,2,3,4]
 	c4 = OptionMenu(root,var2,*credit)
 	var2.set("Credit Hour")
 	c4.grid(padx=10,pady=10,row=5,column=2)	
@@ -153,13 +145,13 @@ if __name__=="__main__":
 	#drop down menu of grade point
 	defaltgrd="Grade" 
 	var1 = StringVar(root)
-	grade = ("A+","A","A-","B+","B","B-","C+","C","D","None")
+	grade = ("A","B","C","D","None")
 	s5 = apply(OptionMenu,(root,var1)+grade)
 	var1.set(defaltgrd)
-	s5.grid(padx=5,pady=10,row=6,column=1)
+	s5.grid(padx=5,pady=5,row=6,column=1)
 	#credit pe hour
 	var2 = StringVar(root)
-	credit = [0,1,2,3,4,5,6]
+	credit = [1,2,3,4]
 	c5 = OptionMenu(root,var2,*credit)
 	var2.set("Credit Hour")
 	c5.grid(padx=10,pady=10,row=6,column=2)	
@@ -170,13 +162,14 @@ if __name__=="__main__":
 	#drop down menu of grade point
 	defaltgrd="Grade" 
 	var1 = StringVar(root)
-	grade = ("A+","A","A-","B+","B","B-","C+","C","D","None")
+	grade = ("A","B","C","D","None")
 	s6 = apply(OptionMenu,(root,var1)+grade)
 	var1.set(defaltgrd)
 	s6.grid(padx=5,pady=10,row=7,column=1)
-	#credit pe hour
+	
+	#credit per hour
 	var2 = StringVar(root)
-	credit = [0,1,2,3,4,5,6]
+	credit = [1,2,3,4]
 	c6 = OptionMenu(root,var2,*credit)
 	var2.set("Credit Hour")
 	c6.grid(padx=10,pady=10,row=7,column=2)	
@@ -187,13 +180,13 @@ if __name__=="__main__":
 	#drop down menu of grade point
 	defaltgrd="Grade" 
 	var1 = StringVar(root)
-	grade = ("A+","A","A-","B+","B","B-","C+","C","D","None")
+	grade = ("A","B","C","D","None")
 	s7 = apply(OptionMenu,(root,var1)+grade)
 	var1.set(defaltgrd)
 	s7.grid(padx=5,pady=10,row=8,column=1)
-	#credit pe hour
+	#credit per hour
 	var2 = StringVar(root)
-	credit = [0,1,2,3,4,5,6]
+	credit = [1,2,3,4]
 	c7 = OptionMenu(root,var2,*credit)
 	var2.set("Credit Hour")
 	c7.grid(padx=10,pady=10,row=8,column=2)	
@@ -204,14 +197,15 @@ if __name__=="__main__":
 	#drop down menu of grade point
 	defaltgrd="Grade" 
 	var1 = StringVar(root)
-	grade = ("A+","A","A-","B+","B","B-","C+","C","D","None")
+	grade = ("A","B","C","D","None")
 	
 	s8 = apply(OptionMenu,(root,var1)+grade)
 	var1.set(defaltgrd)
-	s8.grid(padx=5,pady=10,row=9,column=1)
-	#credit pe hour
+	s8.grid(padx=5,pady=5,row=9,column=1)
+	#credit per hour
 	var2 = StringVar(root)
-	credit = [0,1,2,3,4,5,6]
+	
+	credit = [1,2,3,4]
 	c8 = OptionMenu(root,var2,*credit)
 	var2.set("Credit Hour")
 	c8.grid(padx=10,pady=10,row=9,column=2)	
@@ -219,7 +213,7 @@ if __name__=="__main__":
 
 	button = Button(root,text="Calculate",bg="green",font=8,width=18,command=pressCalculate)
 	button.grid(row=10,column=0,columnspan=2)
-	button = Button(root,text="Exit",bg="#cc3300",font=8,width=10,command=clear)
+	button = Button(root,text="Exit",bg="red",font=8,width=10,command=clear)
 	button.grid(row=10,column=2)
 	
 
