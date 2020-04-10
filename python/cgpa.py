@@ -60,7 +60,11 @@ def pressCalculate():
 if __name__=="__main__":
 	root = Tk()
 	root.resizable(0,0)
+<<<<<<< HEAD
 	root.title("CrazyChickenDev's GPA Calculator with Tkinker Implementation")
+=======
+	root.title("CrazyChicken's GPA Calculator")
+>>>>>>> cabd885caa724ab09434b990f8173b1963aa31c3
 
 	#for sub 1
 	#subject name

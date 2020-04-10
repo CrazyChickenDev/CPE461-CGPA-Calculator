@@ -1,5 +1,5 @@
 /*
-A little test run project on the gpacalculator in order to implement for the cgpa actual assignment
+A little test run project on the gpacalculator using c in order to implement for the cgpa actual assignment
 */
 
 
