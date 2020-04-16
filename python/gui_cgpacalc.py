@@ -157,9 +157,10 @@ g34.place(x=200,y=430,width=45)
 
 gpa1 = 0.00
 def calculategpa1():
-    global gpa1
-    # storing all the grades of 1st Semester in arrays
     global grades,credits
+    global gpa1
+
+    # storing all the grades of 1st Semester in arrays
     grades = []
     grades.append(g1.get())
     grades.append(g3.get())
@@ -203,12 +204,12 @@ def calculategpa1():
             messagebox.showinfo('Invalid grade', "please enter a valid grade")
             goto(41)
 
-    for j in range(0,4):
+    for j in range(0,6):
         sum_credits = sum_credits + credits[j]
 
     gpa1=float(tsum/sum_credits)
-    egpa=Label(bg='white', fg='black', borderwidth=1,width=20, relief='solid',text=gpa1)
-    egpa.place(x=335, y=220)
+    egpa=Label(bg='white', fg='black', borderwidth=1,width=10, relief='solid',text=gpa1)
+    egpa.place(x=340, y=225)
 
 
 gpa2=0.00
@@ -227,10 +228,6 @@ def calculategpa2():
     grades1.append(g31.get())
     grades1.append(g33.get())
     
-    
-
-
-
     # storing all the credits of 2nd Semester in arrays
     credits1 = []
     credits1.append(int(eval(g20.get())))
@@ -265,9 +262,9 @@ def calculategpa2():
     for j in range(0,6):
         sum_credits1 = sum_credits1 + credits1[j]
 
-    gpa2=tsum1/sum_credits1
-    egpa1=Label(bg='white', fg='black', borderwidth=1, relief='solid',width=20,text=gpa2)
-    egpa1.place(x=335, y=420)
+    gpa2=float(tsum1/sum_credits1)
+    egpa1=Label(bg='white', fg='black', borderwidth=1, relief='solid',width=10,text=gpa2)
+    egpa1.place(x=340, y=425)
 
 
 
@@ -279,6 +276,7 @@ id = c.create_line(0, 455, 600,455, width=1, fill='black')
 
 lcgpa=LabelFrame(bg='white',height=30,width=30)
 lcgpa.place(x=30,y=465)
+
 def calculatecgpa():
     global cgpa
     cgpa=(gpa1+gpa2)/2
