@@ -7,12 +7,12 @@ root=Tk()
 root.title('CP461 CGPA CALCULATOR')
 #created canvas as a child to root window
 
-f=Frame(root,height=800,width=800,bg='darkgray')
+f=Frame(root,height=500,width=800,bg='darkgray')
 
 
 h=Label(bg='black',fg='white',text='CGPA CALCULATOR BY NWAOBI DANIEL')
 h.place(x=1,y=1)
-c = Canvas(f, bg='darkgray',height=510, width=450)
+c = Canvas(f, bg='darkgray',height=530, width=450)
 
 #created a line in the canvas
 
@@ -212,7 +212,7 @@ def calculategpa1():
 
     gpa1=float(tsum/sum_credits)
     egpa=Label(bg='white', fg='black', borderwidth=1,width=20, relief='solid',text=gpa1)
-    egpa.place(x=335, y=230)
+    egpa.place(x=335, y=220)
 
 
 gpa2=0.00
@@ -260,7 +260,7 @@ def calculategpa2():
 
     gpa2=tsum1/sum_credits1
     egpa1=Label(bg='white', fg='black', borderwidth=1, relief='solid',width=20,text=gpa2)
-    egpa1.place(x=335, y=430)
+    egpa1.place(x=335, y=420)
 
 
 
@@ -270,7 +270,7 @@ cgpa=0.00
 id = c.create_line(0, 455, 600,455, width=1, fill='black')
 
 lcgpa=LabelFrame(bg='white',height=30,width=30)
-lcgpa.place(x=30,y=442)
+lcgpa.place(x=30,y=465)
 def calculatecgpa():
     global cgpa
     cgpa=(gpa1+gpa2)/2
@@ -320,11 +320,11 @@ l2cgpa.grid(row=2,column=1)
 
 #calculategpa1
 lgpa=Button(text='GPA',bg='darkgray',fg='black', borderwidth=1,relief='solid',width=20,command=calculategpa1)
-lgpa.place(x=300,y=200,width=35)
+lgpa.place(x=300,y=220,width=35)
 
 #calculategpa2
 lgpa=Button(text='GPA',bg='darkgray',fg='black', borderwidth=1,relief='solid',width=20,command=calculategpa2)
-lgpa.place(x=300,y=400,width=35)
+lgpa.place(x=300,y=420,width=35)
 
 
 
