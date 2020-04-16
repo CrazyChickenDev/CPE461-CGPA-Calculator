@@ -1,24 +1,24 @@
 from tkinter import*
 from tkinter import messagebox
 from math import *
-#create root window
+#created root window
 root=Tk()
 #set window title
-root.title('CGPA CALCULATOR')
-#create canvas as a child to root window
+root.title('CP461 CGPA CALCULATOR')
+#created canvas as a child to root window
 
 f=Frame(root,height=400,width=600,bg='darkgray')
 
 
-h=Label(bg='black',fg='white',text='CGPA CALCULATOR')
+h=Label(bg='black',fg='white',text='CGPA CALCULATOR BY NWAOBI DANIEL')
 h.place(x=1,y=1)
 c = Canvas(f, bg='darkgray',height=450, width=600)
 #create a line in the canvas
 id=c.create_line(0,30,600,30,width=1, fill='black')
 c.pack()
  
-etgpa=IntVar()
-etgpa1=IntVar()
+egpa=IntVar()
+egpa1=IntVar()
 
 
 l=Label(f,text='Sem 1',fg='black',bg='darkgray')
