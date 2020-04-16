@@ -1,5 +1,5 @@
 #CGPA_Calculator
-print('This program calculates the CGPA of 100 Level Technology Students')
+print('This program calculates the CGPA of 300 Level Computer Engineering Students')
 print('Input your scores in the 1st Semester')
 a = input('MTH 101= ')
 a = float(a)
