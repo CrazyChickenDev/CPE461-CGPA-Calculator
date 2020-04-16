@@ -41,6 +41,8 @@ l8=Label(f,text='Subject 8',fg='black',bg='darkgray')
 l8.place(x=20,y=190)
 l9=Label(f,text='Subject 9',fg='black',bg='darkgray')
 l9.place(x=20,y=210)
+
+
 l10=Label(f,text='Grade',fg='black',bg='white',borderwidth=1,relief='solid')
 l10.place(x=150,y=50,width=35)
 l11=Label(f,text='Credit',fg='black',bg='white',borderwidth=1,relief='solid')
@@ -108,10 +110,10 @@ l18.place(x=20,y=390)
 l19=Label(f,text='Subject 8',fg='black',bg='darkgray')
 l19.place(x=20,y=410)
 
-l18=Label(f,text='Grade',fg='black',bg='white',borderwidth=1,relief='solid')
-l18.place(x=150,y=220,width=35)
-l19=Label(f,text='Credit',fg='black',bg='white',borderwidth=1,relief='solid')
-l19.place(x=185,y=220,width=35)
+l20=Label(f,text='Grade',fg='black',bg='white',borderwidth=1,relief='solid')
+l20.place(x=150,y=220,width=35)
+l21=Label(f,text='Credit',fg='black',bg='white',borderwidth=1,relief='solid')
+l21.place(x=185,y=220,width=35)
 
 g13 = Entry(f,bg='white',fg='black',borderwidth=1,relief='solid')
 g13.place(x=150,y=240,width=35)
