@@ -67,8 +67,8 @@ while i >100 or i <0:
 
 scores = [a, b, c, d, e, f, g, h, i]
 n = 0
-points = [0, 0, 0, 0, 0, 0, 0]
-while n <=6:
+points = [0, 0, 0, 0, 0, 0]
+while n <=5:
     if scores[n] >=70 and scores[n] <=100:
         points[n] = 5
         print ('You got an A')
@@ -88,85 +88,105 @@ while n <=6:
 
 units = [5, 4, 4, 1, 1, 1, 0]
 global totalpoints
-totalpoints = [0, 0, 0, 0, 0, 0, 0]
+totalpoints = [0, 0, 0, 0, 0, 0]
 c=0
-while c<=6:
+while c<=5:
     totalpoints[c]=units[c]*points[c]
     c+=1
 gpa=sum(totalpoints)/sum(units)
-gpa=round(gpa, 2)
+gpa=round(gpa, 4)
 print('Your GPA for 1st Semester is ',gpa)
 
+
 print('Input your scores in the 2nd Semester')
-a1 = input('MTH 102= ')
+a1 = input('CPE 372= ')
 a1 = float(a1)
 while a1 > 100 or a1 < 0:
     print('Please input a correct value')
-    a1 = input('MTH 102= ')
+    a1 = input('CPE 372= ')
     a1 = float(a1)
-b1 = input('CHM 102= ')
+
+b1 = input('CPE 378= ')
 b1 = float(b1)
 while b1 >100 or b1 <0:
     print('Please input a correct value')
-    b1 = input('CHM 102= ')
+    b1 = input('CPE 378= ')
     b1 = float(b1)
-c1 = input('PHY 102= ')
+
+c1 = input('CPE 382= ')
 c1 = float(c1)
 while c1 >100 or c1 <0:
     print('Please input a correct value')
-    c1 = input('PHY 102= ')
+    c1 = input('CPE 382= ')
     c1 = float(c1)
-d1 = input('PHY 108= ')
+
+d1 = input('CPE 314= ')
 d1 = float(d1)
 while d1 >100 or d1 <0:
     print('Please input a correct value')
-    d1 = input('PHY 108= ')
+    d1 = input('CPE 314= ')
     d1 = float(d1)
-e1 = input('CHM 104= ')
+
+e1 = input('CPE 312= ')
 e1 = float(e1)
 while e1 >100 or e1 <0:
     print('Please input a correct value')
-    e1 = input('CHM 104= ')
+    e1 = input('CPE 312= ')
     e1 = float(e1)
-f1 = input('MTH 104= ')
+
+f1 = input('CPE 302= ')
 f1 = float(f1)
 while f1 >100 or f1 <0:
     print('Please input a correct value')
-    f1 = input('MTH 104= ')
+    f1 = input('CPE 302= ')
     f1 = float(f1)
-g1 = input('SER 001= ')
+    
+g1 = input('CPE 324= ')
 g1 = float(g1)
 while g1 >100 or g1 <0:
     print('Please input a correct value')
-    g1 = input('SER 001= ')
+    g1 = input('CPE 324= ')
     g1 = float(g1)
-scores1 = [a1, b1, c1, d1, e1, f1, g1]
+
+h1 = input('CPE 324= ')
+h1 = float(h1)
+while h1 >100 or h1 <0:
+    print('Please input a correct value')
+    h1 = input('CPE 324= ')
+    h1 = float(h1)
+
+scores1 = [a1, b1, c1, d1, e1, f1, g1, h1]
 n1 = 0
 points1 = [0, 0, 0, 0, 0, 0, 0]
-while n1 <=6:
+while n1 <=5:
     if scores1[n1] >=70 and scores1[n1] <=100:
         points1[n1] = 5
+        print ('You got an A')
     elif scores1[n1] >= 60 and scores1[n1] <=69:
         points1[n1] = 4
+        print ('You got a B')
     elif scores1[n1] >= 50 and scores1[n1] <=59:
         points1[n1] = 3
+        print ('You got a C')
     elif scores1[n1] >= 45 and scores1[n1] <=49:
         points1[n1] = 2
-    elif scores1[n1] >= 40 and scores1[n1] <=44:
-        points1[n1] = 1
-    elif scores1[n1] >= 0 and scores1[n1] <=39:
+        print ('You got a D')
+    elif scores1[n1] >= 0 and scores1[n1] <=44:
         points1[n1] = 0
+        print ('You got an F')
     n1+=1
+
 units1 = [5, 4, 4, 1, 1, 2, 0]
 global totalpoints1
 totalpoints1 = [0, 0, 0, 0, 0, 0, 0]
 c1=0
-while c1<=6:
+while c1<=5:
     totalpoints1[c1]=units1[c1]*points1[c1]
     c1+=1
 gpa1=sum(totalpoints1)/sum(units1)
-gpa1= round(gpa1, 2)
+gpa1= round(gpa1, 4)
 print('Your GPA for 2nd Semester is ',gpa1)
+
 cgpa=(sum(totalpoints)+sum(totalpoints1))/(sum(units)+sum(units1))
 cgpa=round(cgpa, 2)
 print('Your CGPA is ',cgpa)
