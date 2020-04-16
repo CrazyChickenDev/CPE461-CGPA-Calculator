@@ -83,10 +83,10 @@ while n <=6:
         points[n] = 0
     n+=1
 
-units = [3, 3, 3, 3, 3, 3, 2, 2, 2]
+units = [5, 4, 4, 1, 1, 1, 0]
 global totalpoints
-totalpoints = [0, 0, 0, 0, 0, 0, 0, 0, 0]
-c=0
+totalpoints = [0, 0, 0, 0, 0, 0, 0]
+c = 0
 while c<=6:
     totalpoints[c]=units[c]*points[c]
     c+=1
