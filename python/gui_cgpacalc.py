@@ -289,12 +289,12 @@ l2cgpa.grid(row=2,column=1)
 
 
 #calculatetgpa1
-ltgpa=Button(text='TGPA',bg='darkgray',fg='black', borderwidth=1,relief='solid',width=20,command=calculatetgpa1)
-ltgpa.place(x=300,y=120,width=35)
+lgpa=Button(text='GPA',bg='darkgray',fg='black', borderwidth=1,relief='solid',width=20,command=calculategpa1)
+lgpa.place(x=300,y=120,width=35)
 
 #calculatetgpa2
-ltgpa=Button(text='TGPA',bg='darkgray',fg='black', borderwidth=1,relief='solid',width=20,command=calculatetgpa2)
-ltgpa.place(x=300,y=300,width=35)
+lgpa=Button(text='GPA',bg='darkgray',fg='black', borderwidth=1,relief='solid',width=20,command=calculategpa2)
+lgpa.place(x=300,y=300,width=35)
 
 
 
