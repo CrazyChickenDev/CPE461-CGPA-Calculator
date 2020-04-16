@@ -7,13 +7,15 @@ root=Tk()
 root.title('CP461 CGPA CALCULATOR')
 #created canvas as a child to root window
 
-f=Frame(root,height=400,width=600,bg='darkgray')
+f=Frame(root,height=800,width=800,bg='darkgray')
 
 
 h=Label(bg='black',fg='white',text='CGPA CALCULATOR BY NWAOBI DANIEL')
 h.place(x=1,y=1)
-c = Canvas(f, bg='darkgray',height=450, width=600)
-#create a line in the canvas
+c = Canvas(f, bg='darkgray',height=500, width=600)
+
+#created a line in the canvas
+
 id=c.create_line(0,30,600,30,width=1, fill='black')
 c.pack()
  
@@ -109,50 +111,44 @@ l19=Label(f,text='Subject 8',fg='black',bg='darkgray')
 l19.place(x=20,y=410)
 
 l20=Label(f,text='Grade',fg='black',bg='white',borderwidth=1,relief='solid')
-l20.place(x=150,y=220,width=35)
+l20.place(x=150,y=240,width=35)
 l21=Label(f,text='Credit',fg='black',bg='white',borderwidth=1,relief='solid')
-l21.place(x=185,y=220,width=35)
+l21.place(x=185,y=240,width=35)
 
 g16 = Entry(f,bg='white',fg='black',borderwidth=1,relief='solid')
-g16.place(x=150,y=240,width=35)
+g16.place(x=150,y=260,width=35)
 g17 = Entry(f,bg='white',fg='black',borderwidth=1,relief='solid')
-g17.place(x=185,y=240,width=35)
+g17.place(x=185,y=260,width=35)
 g18 = Entry(f,bg='white',fg='black',borderwidth=1,relief='solid')
-g18.place(x=150,y=260,width=35)
+g18.place(x=150,y=280,width=35)
 g19 = Entry(f,bg='white',fg='black',borderwidth=1,relief='solid')
-g19.place(x=185,y=260,width=35)
+g19.place(x=185,y=280,width=35)
 g20= Entry(f,bg='white',fg='black',borderwidth=1,relief='solid')
-g20.place(x=150,y=280,width=35)
+g20.place(x=150,y=300,width=35)
 g21 = Entry(f,bg='white',fg='black',borderwidth=1,relief='solid')
-g21.place(x=185,y=280,width=35)
+g21.place(x=185,y=300,width=35)
 g22 = Entry(f,bg='white',fg='black',borderwidth=1,relief='solid')
-g22.place(x=150,y=300,width=35)
+g22.place(x=150,y=320,width=35)
 g23 = Entry(f,bg='white',fg='black',borderwidth=1,relief='solid')
-g23.place(x=185,y=300,width=35)
+g23.place(x=185,y=320,width=35)
 g24 = Entry(f,bg='white',fg='black',borderwidth=1,relief='solid')
-g24.place(x=150,y=320,width=35)
+g24.place(x=150,y=340,width=35)
 g25 = Entry(f,bg='white',fg='black',borderwidth=1,relief='solid')
-g25.place(x=185,y=320,width=35)
+g25.place(x=185,y=340,width=35)
 g26 = Entry(f,bg='white',fg='black',borderwidth=1,relief='solid')
-g26.place(x=150,y=340,width=35)
+g26.place(x=150,y=360,width=35)
 g27 = Entry(f,bg='white',fg='black',borderwidth=1,relief='solid')
-g27.place(x=185,y=340,width=35)
+g27.place(x=185,y=360,width=35)
 
 
 
 
 
-#final cgpa
+#Final CGPA
 
+#Backend(Main function)
 
-
-
-#backend
-
-# storing all the grades of sem1 in array
-
-
-
+#Storing all the grades of 1st Semester in arrays
 
 gpa1 = 0.00
 
