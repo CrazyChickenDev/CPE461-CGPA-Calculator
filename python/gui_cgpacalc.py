@@ -38,11 +38,11 @@ l5.place(x=20,y=150)
 l6=Label(f,text='Subject 6',fg='black',bg='darkgray')
 l6.place(x=20,y=170)
 l7=Label(f,text='Subject 7',fg='black',bg='darkgray')
-l7.place(x=20,y=170)
+l7.place(x=20,y=190)
 l8=Label(f,text='Subject 8',fg='black',bg='darkgray')
-l8.place(x=20,y=190)
+l8.place(x=20,y=210)
 l9=Label(f,text='Subject 9',fg='black',bg='darkgray')
-l9.place(x=20,y=210)
+l9.place(x=20,y=230)
 
 
 l10=Label(f,text='Grade',fg='black',bg='white',borderwidth=1,relief='solid')
@@ -87,7 +87,7 @@ g16.place(x=185,y=210,width=35)
 
 
 #2nd Semester
-id = c.create_line(0, 235, 600, 235, width=1, fill='black')
+id = c.create_line(0, 255, 600, 255, width=1, fill='black')
 c.pack()
 
 
@@ -208,7 +208,7 @@ def calculategpa1():
 
     gpa1=float(tsum/sum_credits)
     egpa=Label(bg='white', fg='black', borderwidth=1,width=20, relief='solid',text=gpa1)
-    egpa.place(x=335, y=120)
+    egpa.place(x=335, y=200)
 
 
 gpa2=0.00
@@ -223,7 +223,7 @@ def calculategpa2():
     grades1.append(g21.get())
     grades1.append(g23.get())
 
-    # storing all the credits of sem1 in array
+    # storing all the credits of 1st Semester in array
     credits1 = []
     credits1.append(int(eval(g14.get())))
     credits1.append(int(eval(g16.get())))
@@ -256,14 +256,14 @@ def calculategpa2():
 
     gpa2=tsum1/sum_credits1
     egpa1=Label(bg='white', fg='black', borderwidth=1, relief='solid',width=20,text=gpa2)
-    egpa1.place(x=335, y=300)
+    egpa1.place(x=335, y=400)
 
 
 
 
 cgpa=0.00
 
-id = c.create_line(0, 430, 600,430, width=1, fill='black')
+id = c.create_line(0, 435, 600,435, width=1, fill='black')
 
 lcgpa=LabelFrame(bg='white',height=30,width=30)
 lcgpa.place(x=30,y=442)
@@ -316,11 +316,11 @@ l2cgpa.grid(row=2,column=1)
 
 #calculategpa1
 lgpa=Button(text='GPA',bg='darkgray',fg='black', borderwidth=1,relief='solid',width=20,command=calculategpa1)
-lgpa.place(x=300,y=120,width=35)
+lgpa.place(x=300,y=200,width=35)
 
 #calculategpa2
 lgpa=Button(text='GPA',bg='darkgray',fg='black', borderwidth=1,relief='solid',width=20,command=calculategpa2)
-lgpa.place(x=300,y=300,width=35)
+lgpa.place(x=300,y=400,width=35)
 
 
 
