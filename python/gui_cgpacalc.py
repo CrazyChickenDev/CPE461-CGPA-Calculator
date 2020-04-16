@@ -4,13 +4,13 @@ from math import *
 #create root window
 root=Tk()
 #set window title
-root.title('CGPA CALCULATER')
+root.title('CGPA CALCULATOR')
 #create canvas as a child to root window
 
 f=Frame(root,height=400,width=600,bg='darkgray')
 
 
-h=Label(bg='black',fg='white',text='CGPA CALCULATER')
+h=Label(bg='black',fg='white',text='CGPA CALCULATOR')
 h.place(x=1,y=1)
 c = Canvas(f, bg='darkgray',height=450, width=600)
 #create a line in the canvas
@@ -134,10 +134,10 @@ g24.place(x=185,y=340,width=35)
 
 
 
-tgpa1 = 0.00
+gpa1 = 0.00
 
-def calculatetgpa1():
-    global tgpa1
+def calculategpa1():
+    global gpa1
     # storing all the grades of sem1 in array
     global grades,credits
     grades = []
@@ -161,20 +161,16 @@ def calculatetgpa1():
 
     tsum = 0
     sum_credits = 0
-    for i in range(0,6):
-        if(grades[i]=='O'):
-            tsum=tsum+10*credits[i]
-        elif(grades[i]=='A+'):
-            tsum=tsum+9*credits[i]
-        elif(grades[i]=='A'):
-            tsum=tsum+8*credits[i]
-        elif(grades[i]=='B+'):
-            tsum=tsum+7*credits[i]
-        elif(grades[i]=='B'):
-            tsum=tsum+6*credits[i]
-        elif(grades[i]=='C'):
+    for i in range(0,4):
+        if(grades[i]=='A'):
             tsum=tsum+5*credits[i]
-        elif(grades[i]=='E'):
+        elif(grades[i]=='B'):
+            tsum=tsum+4*credits[i]
+        elif(grades[i]=='C'):
+            tsum=tsum+3*credits[i]
+        elif(grades[i]=='D'):
+            tsum=tsum+2*credits[i]
+        elif(grades[i]=='F'):
             tsum = tsum + 0*credits[i]
         elif (grades[i] == ''):
             messagebox.showinfo('Empty grade',"please enter grade")
