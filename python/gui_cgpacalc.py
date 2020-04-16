@@ -203,7 +203,7 @@ def calculategpa1():
             messagebox.showinfo('Invalid grade', "please enter a valid grade")
             goto(41)
 
-    for j in range(0,6):
+    for j in range(0,4):
         sum_credits = sum_credits + credits[j]
 
     gpa1=float(tsum/sum_credits)
@@ -212,26 +212,36 @@ def calculategpa1():
 
 
 gpa2=0.00
-
 def calculategpa2():
     global grades1,credits1
     global gpa2
+
+    # storing all the grades of 2nd Semester in arrays
     grades1 = []
-    grades1.append(g13.get())
-    grades1.append(g15.get())
-    grades1.append(g17.get())
     grades1.append(g19.get())
     grades1.append(g21.get())
     grades1.append(g23.get())
+    grades1.append(g25.get())
+    grades1.append(g27.get())
+    grades1.append(g29.get())
+    grades1.append(g31.get())
+    grades1.append(g33.get())
+    
+    
 
-    # storing all the credits of 1st Semester in arrays
+
+
+    # storing all the credits of 2nd Semester in arrays
     credits1 = []
-    credits1.append(int(eval(g14.get())))
-    credits1.append(int(eval(g16.get())))
-    credits1.append(int(eval(g18.get())))
     credits1.append(int(eval(g20.get())))
     credits1.append(int(eval(g22.get())))
     credits1.append(int(eval(g24.get())))
+    credits1.append(int(eval(g26.get())))
+    credits1.append(int(eval(g28.get())))
+    credits1.append(int(eval(g30.get())))
+    credits1.append(int(eval(g32.get())))
+    credits1.append(int(eval(g34.get())))
+
     tsum1 = 0
     sum_credits1 = 0
     for i in range(0,4):
