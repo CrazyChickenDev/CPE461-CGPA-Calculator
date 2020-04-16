@@ -24,7 +24,7 @@ egpa1=IntVar()
 
 
 l=Label(f,text='1st Semester',fg='black',bg='darkgray')
-l.place(x=20,y=35)
+l.place(x=20,y=45)
 l1=Label(f,text='Subject 1',fg='black',bg='darkgray')
 l1.place(x=20,y=70)
 l2=Label(f,text='Subject 2',fg='black',bg='darkgray')
@@ -46,9 +46,9 @@ l9.place(x=20,y=230)
 
 
 l10=Label(f,text='Grade',fg='black',bg='white',borderwidth=1,relief='solid')
-l10.place(x=150,y=50,width=35)
+l10.place(x=150,y=45,width=35)
 l11=Label(f,text='Credit',fg='black',bg='white',borderwidth=1,relief='solid')
-l11.place(x=185,y=50,width=35)
+l11.place(x=185,y=45,width=35)
 
 #entry of grades and credits
 g2=IntVar()
@@ -84,6 +84,10 @@ g15 = Entry(f,bg='white',fg='black',borderwidth=1,relief='solid')
 g15.place(x=150,y=210,width=35)
 g16 = Entry(f,bg='white',fg='black',borderwidth=1,relief='solid')
 g16.place(x=185,y=210,width=35)
+g17 = Entry(f,bg='white',fg='black',borderwidth=1,relief='solid')
+g17.place(x=150,y=230,width=35)
+g18 = Entry(f,bg='white',fg='black',borderwidth=1,relief='solid')
+g18.place(x=185,y=230,width=35)
 
 
 #2nd Semester
@@ -115,19 +119,15 @@ l20.place(x=150,y=265,width=35)
 l21=Label(f,text='Credit',fg='black',bg='white',borderwidth=1,relief='solid')
 l21.place(x=185,y=265,width=35)
 
-g17 = Entry(f,bg='white',fg='black',borderwidth=1,relief='solid')
-g17.place(x=150,y=270,width=35)
-g18 = Entry(f,bg='white',fg='black',borderwidth=1,relief='solid')
-g18.place(x=185,y=270,width=35)
 g19 = Entry(f,bg='white',fg='black',borderwidth=1,relief='solid')
 g19.place(x=150,y=290,width=35)
 g20 = Entry(f,bg='white',fg='black',borderwidth=1,relief='solid')
 g20.place(x=185,y=290,width=35)
-g21= Entry(f,bg='white',fg='black',borderwidth=1,relief='solid')
+g21 = Entry(f,bg='white',fg='black',borderwidth=1,relief='solid')
 g21.place(x=150,y=310,width=35)
 g22 = Entry(f,bg='white',fg='black',borderwidth=1,relief='solid')
 g22.place(x=185,y=310,width=35)
-g23 = Entry(f,bg='white',fg='black',borderwidth=1,relief='solid')
+g23= Entry(f,bg='white',fg='black',borderwidth=1,relief='solid')
 g23.place(x=150,y=330,width=35)
 g24 = Entry(f,bg='white',fg='black',borderwidth=1,relief='solid')
 g24.place(x=185,y=330,width=35)
@@ -147,6 +147,10 @@ g31 = Entry(f,bg='white',fg='black',borderwidth=1,relief='solid')
 g31.place(x=150,y=410,width=35)
 g32 = Entry(f,bg='white',fg='black',borderwidth=1,relief='solid')
 g32.place(x=185,y=410,width=35)
+g33 = Entry(f,bg='white',fg='black',borderwidth=1,relief='solid')
+g33.place(x=150,y=430,width=35)
+g34 = Entry(f,bg='white',fg='black',borderwidth=1,relief='solid')
+g34.place(x=185,y=430,width=35)
 
 
 
@@ -208,7 +212,7 @@ def calculategpa1():
 
     gpa1=float(tsum/sum_credits)
     egpa=Label(bg='white', fg='black', borderwidth=1,width=20, relief='solid',text=gpa1)
-    egpa.place(x=335, y=200)
+    egpa.place(x=335, y=230)
 
 
 gpa2=0.00
@@ -256,14 +260,14 @@ def calculategpa2():
 
     gpa2=tsum1/sum_credits1
     egpa1=Label(bg='white', fg='black', borderwidth=1, relief='solid',width=20,text=gpa2)
-    egpa1.place(x=335, y=400)
+    egpa1.place(x=335, y=430)
 
 
 
 
 cgpa=0.00
 
-id = c.create_line(0, 435, 600,435, width=1, fill='black')
+id = c.create_line(0, 455, 600,455, width=1, fill='black')
 
 lcgpa=LabelFrame(bg='white',height=30,width=30)
 lcgpa.place(x=30,y=442)
