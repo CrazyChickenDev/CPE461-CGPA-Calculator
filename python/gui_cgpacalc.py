@@ -182,15 +182,15 @@ def calculategpa1():
         sum_credits = sum_credits + credits[j]
 
 
-    tgpa1=float(tsum/sum_credits)
-    etgpa=Label(bg='white', fg='black', borderwidth=1,width=20, relief='solid',text=tgpa1)
-    etgpa.place(x=335, y=120)
+    gpa1=float(tsum/sum_credits)
+    egpa=Label(bg='white', fg='black', borderwidth=1,width=20, relief='solid',text=gpa1)
+    egpa.place(x=335, y=120)
 
 
-tgpa2=0.00
-def calculatetgpa2():
+gpa2=0.00
+def calculategpa2():
     global grades1,credits1
-    global tgpa2
+    global gpa2
     grades1 = []
     grades1.append(g13.get())
     grades1.append(g15.get())
