@@ -1,5 +1,5 @@
-#CGPA_Calculator
-print('This program calculates the CGPA of 300 Level Computer Engineering Students')
+#CPE461 CGPA_Calculator
+print('This program calculates the CGPA of 300 Level Computer Engineering Students at the University Of Benin')
 print('Input your scores in the 1st Semester')
 a = input('CPE 311= ')
 a = float(a)
@@ -43,6 +43,20 @@ while g >100 or g <0:
     print('Please input a correct value')
     g = input('CPE 351= ')
     g = float(g)
+h = input('CPE 313= ')
+h = float(h)
+while h >100 or h <0:
+    print('Please input a correct value')
+    h = input('CPE 313= ')
+    h = float(h)
+
+i = input('CPE 331= ')
+i = float(i)
+while i >100 or i <0:
+    print('Please input a correct value')
+    i = input('CPE 331= ')
+    i = float(i)
+
 scores = [a, b, c, d, e, f, g]
 n = 0
 points = [0, 0, 0, 0, 0, 0, 0]
