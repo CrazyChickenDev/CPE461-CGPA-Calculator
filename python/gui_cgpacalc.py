@@ -156,7 +156,6 @@ g34.place(x=200,y=430,width=45)
 #Storing all the grades of 1st Semester in arrays
 
 gpa1 = 0.00
-
 def calculategpa1():
     global gpa1
     # storing all the grades of 1st Semester in arrays
@@ -168,6 +167,9 @@ def calculategpa1():
     grades.append(g7.get())
     grades.append(g9.get())
     grades.append(g11.get())
+    grades.append(g13.get())
+    grades.append(g15.get())
+    grades.append(g17.get())
 
     # storing all the credits of 1st Semester in arrays
     credits = []
@@ -177,6 +179,9 @@ def calculategpa1():
     credits.append(int(eval(g8.get())))
     credits.append(int(eval(g10.get())))
     credits.append(int(eval(g12.get())))
+    credits.append(int(eval(g14.get())))
+    credits.append(int(eval(g16.get())))
+    credits.append(int(eval(g18.get())))
 
     tsum = 0
     sum_credits = 0
@@ -259,7 +264,7 @@ def calculategpa2():
 #To calculate cgpa
 cgpa=0.00
 
-#created a line in the canvas
+#created a 3rd line in the canvas
 id = c.create_line(0, 455, 600,455, width=1, fill='black')
 
 lcgpa=LabelFrame(bg='white',height=30,width=30)
