@@ -186,7 +186,7 @@ def calculategpa1():
 
     tsum = 0
     sum_credits = 0
-    for i in range(0,4):
+    for i in range(0,5):
         if(grades[i]=='A'):
             tsum=tsum+5*credits[i]
         elif(grades[i]=='B'):
@@ -202,7 +202,7 @@ def calculategpa1():
             goto(41)
         else:
             messagebox.showinfo('Invalid grade', "please enter a valid grade")
-            goto(41)
+            goto(52)
 
     for j in range(0,6):
         sum_credits = sum_credits + credits[j]
@@ -241,7 +241,7 @@ def calculategpa2():
 
     tsum1 = 0
     sum_credits1 = 0
-    for i in range(0,4):
+    for i in range(0,5):
         if(grades1[i]=='A'):
             tsum1=tsum1+5*credits1[i]
         elif(grades1[i]=='B'):
