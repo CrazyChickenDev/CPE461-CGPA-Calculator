@@ -67,7 +67,8 @@ while i >100 or i <0:
 
 scores = [a, b, c, d, e, f, g, h, i]
 n = 0
-points = [0, 0, 0, 0, 0, 0]
+points = [0, 0, 0, 0, 0, 0, 0, 0, 0]
+
 while n <=5:
     if scores[n] >=70 and scores[n] <=100:
         points[n] = 5
@@ -88,9 +89,9 @@ while n <=5:
 
 units = [5, 4, 4, 1, 1, 1, 0]
 global totalpoints
-totalpoints = [0, 0, 0, 0, 0, 0]
+totalpoints = [0, 0, 0, 0, 0, 0, 0, 0, 0]
 c=0
-while c<=5:
+while c<=8:
     totalpoints[c]=units[c]*points[c]
     c+=1
 gpa=sum(totalpoints)/sum(units)
@@ -140,7 +141,7 @@ while f1 >100 or f1 <0:
     print('Please input a correct value')
     f1 = input('CPE 302= ')
     f1 = float(f1)
-    
+
 g1 = input('CPE 324= ')
 g1 = float(g1)
 while g1 >100 or g1 <0:
