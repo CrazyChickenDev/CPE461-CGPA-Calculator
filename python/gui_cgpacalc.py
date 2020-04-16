@@ -12,7 +12,7 @@ f=Frame(root,height=800,width=800,bg='darkgray')
 
 h=Label(bg='black',fg='white',text='CGPA CALCULATOR BY NWAOBI DANIEL')
 h.place(x=1,y=1)
-c = Canvas(f, bg='darkgray',height=500, width=600)
+c = Canvas(f, bg='darkgray',height=510, width=450)
 
 #created a line in the canvas
 
@@ -84,12 +84,9 @@ g15 = Entry(f,bg='white',fg='black',borderwidth=1,relief='solid')
 g15.place(x=150,y=230,width=35)
 
 
-
-
 #2nd Semester
-id = c.create_line(0, 210, 600, 210, width=1, fill='black')
+id = c.create_line(0, 235, 600, 235, width=1, fill='black')
 c.pack()
-
 
 
 lsem2=Label(f,text='2nd Semester',fg='black',bg='darkgray')
@@ -255,9 +252,11 @@ def calculategpa2():
 
 
 cgpa=0.00
-id = c.create_line(0, 390, 600,390, width=1, fill='black')
+
+id = c.create_line(0, 430, 600,430, width=1, fill='black')
+
 lcgpa=LabelFrame(bg='white',height=30,width=30)
-lcgpa.place(x=150,y=391)
+lcgpa.place(x=30,y=442)
 def calculatecgpa():
     global cgpa
     cgpa=(gpa1+gpa2)/2
@@ -305,11 +304,11 @@ l2cgpa.grid(row=2,column=1)
 
 
 
-#calculatetgpa1
+#calculategpa1
 lgpa=Button(text='GPA',bg='darkgray',fg='black', borderwidth=1,relief='solid',width=20,command=calculategpa1)
 lgpa.place(x=300,y=120,width=35)
 
-#calculatetgpa2
+#calculategpa2
 lgpa=Button(text='GPA',bg='darkgray',fg='black', borderwidth=1,relief='solid',width=20,command=calculategpa2)
 lgpa.place(x=300,y=300,width=35)
 
