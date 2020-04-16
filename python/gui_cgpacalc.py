@@ -243,7 +243,7 @@ lcgpa=LabelFrame(bg='white',height=30,width=30)
 lcgpa.place(x=150,y=391)
 def calculatecgpa():
     global cgpa
-    cgpa=(tgpa1+tgpa2)/2
+    cgpa=(gpa1+gpa2)/2
     m1=Label(lcgpa,bg='white',text=cgpa)
     m1.grid(row=1,column=2)
 
@@ -253,13 +253,13 @@ def remarks():
     global subno,subno1
 
     #checking reappear in 1st sem
-    for i in range(0,6):
-        if grades[i]=='E':
+    for i in range(0,4):
+        if grades[i]=='F':
             subno=i
             count=count+1
     # checking reappear in 2nd sem
-    for i in range(0,6):
-        if grades1[i]=='E':
+    for i in range(0,4):
+        if grades1[i]=='F':
             subno1=i
             count1=count1+1
     if(count>0 and count1==0):
