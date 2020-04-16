@@ -1,27 +1,26 @@
 from tkinter import*
 from tkinter import messagebox
 from math import *
+
 #created root window
 root=Tk()
+
 #set window title
 root.title('CP461 CGPA CALCULATOR')
-#created canvas as a child to root window
 
+#created canvas as a child to root window
 f=Frame(root,height=500,width=800,bg='darkgray')
 
-
-h=Label(bg='black',fg='white',text='CGPA CALCULATOR BY NWAOBI DANIEL')
+h=Label(bg='black',fg='white',text='BUILT BY NWAOBI DANIEL')
 h.place(x=1,y=1)
 c = Canvas(f, bg='darkgray',height=530, width=450)
 
 #created a line in the canvas
-
 id=c.create_line(0,30,600,30,width=1, fill='black')
 c.pack()
  
 egpa=IntVar()
 egpa1=IntVar()
-
 
 l=Label(f,text='1st Semester',fg='black',bg='darkgray')
 l.place(x=20,y=45)
@@ -43,7 +42,6 @@ l8=Label(f,text='Subject 8',fg='black',bg='darkgray')
 l8.place(x=20,y=210)
 l9=Label(f,text='Subject 9',fg='black',bg='darkgray')
 l9.place(x=20,y=230)
-
 
 l10=Label(f,text='Grade',fg='black',bg='white',borderwidth=1,relief='solid')
 l10.place(x=150,y=45,width=45)
@@ -91,9 +89,9 @@ g18.place(x=200,y=230,width=45)
 
 
 #2nd Semester
+#created another line in the canvas
 id = c.create_line(0, 255, 600, 255, width=1, fill='black')
 c.pack()
-
 
 lsem2=Label(f,text='2nd Semester',fg='black',bg='darkgray')
 lsem2.place(x=20,y=265)
@@ -153,20 +151,15 @@ g34 = Entry(f,bg='white',fg='black',borderwidth=1,relief='solid')
 g34.place(x=200,y=430,width=45)
 
 
-
-
-
 #Final CGPA
-
 #Backend(Main function)
-
 #Storing all the grades of 1st Semester in arrays
 
 gpa1 = 0.00
 
 def calculategpa1():
     global gpa1
-    # storing all the grades of sem1 in array
+    # storing all the grades of 1st Semester in arrays
     global grades,credits
     grades = []
     grades.append(g1.get())
@@ -176,16 +169,14 @@ def calculategpa1():
     grades.append(g9.get())
     grades.append(g11.get())
 
-    # storing all the credits of sem1 in array
+    # storing all the credits of 1st Semester in arrays
     credits = []
-
     credits.append(int(eval(g2.get())))
     credits.append(int(eval(g4.get())))
     credits.append(int(eval(g6.get())))
     credits.append(int(eval(g8.get())))
     credits.append(int(eval(g10.get())))
     credits.append(int(eval(g12.get())))
-
 
     tsum = 0
     sum_credits = 0
@@ -206,9 +197,9 @@ def calculategpa1():
         else:
             messagebox.showinfo('Invalid grade', "please enter a valid grade")
             goto(41)
+
     for j in range(0,6):
         sum_credits = sum_credits + credits[j]
-
 
     gpa1=float(tsum/sum_credits)
     egpa=Label(bg='white', fg='black', borderwidth=1,width=20, relief='solid',text=gpa1)
@@ -216,6 +207,7 @@ def calculategpa1():
 
 
 gpa2=0.00
+
 def calculategpa2():
     global grades1,credits1
     global gpa2
@@ -227,7 +219,7 @@ def calculategpa2():
     grades1.append(g21.get())
     grades1.append(g23.get())
 
-    # storing all the credits of 1st Semester in array
+    # storing all the credits of 1st Semester in arrays
     credits1 = []
     credits1.append(int(eval(g14.get())))
     credits1.append(int(eval(g16.get())))
@@ -264,9 +256,10 @@ def calculategpa2():
 
 
 
-
+#To calculate cgpa
 cgpa=0.00
 
+#created a line in the canvas
 id = c.create_line(0, 455, 600,455, width=1, fill='black')
 
 lcgpa=LabelFrame(bg='white',height=30,width=30)
@@ -282,12 +275,12 @@ def remarks():
     count1=0
     global subno,subno1
 
-    #checking reappear in 1st sem
+    #checking reappear in 1st semester
     for i in range(0,4):
         if grades[i]=='F':
             subno=i
             count=count+1
-    # checking reappear in 2nd sem
+    # checking reappear in 2nd semester
     for i in range(0,4):
         if grades1[i]=='F':
             subno1=i
