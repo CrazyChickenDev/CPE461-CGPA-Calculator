@@ -71,16 +71,19 @@ points = [0, 0, 0, 0, 0, 0, 0]
 while n <=6:
     if scores[n] >=70 and scores[n] <=100:
         points[n] = 5
+        print ('You got an A')
     elif scores[n] >= 60 and scores[n] <=69:
         points[n] = 4
+        print ('You got a B')
     elif scores[n] >= 50 and scores[n] <=59:
         points[n] = 3
+        print ('You got a C')
     elif scores[n] >= 45 and scores[n] <=49:
         points[n] = 2
-    elif scores[n] >= 40 and scores[n] <=44:
-        points[n] = 1
-    elif scores[n] >= 0 and scores[n] <=39:
+        print ('You got a D')
+    elif scores[n] >= 0 and scores[n] <=44:
         points[n] = 0
+        print ('You got an F')
     n+=1
 
 units = [5, 4, 4, 1, 1, 1, 0]
