@@ -85,7 +85,7 @@ while n <=6:
 
 units = [5, 4, 4, 1, 1, 1, 0]
 global totalpoints
-totalpoints = [0, 0, 0, 0, 0, 0, 0]
+totalpoints = [0, 0, 0, 0, 0, 0, 0, 0, 0]
 c = 0
 while c<=6:
     totalpoints[c]=units[c]*points[c]
