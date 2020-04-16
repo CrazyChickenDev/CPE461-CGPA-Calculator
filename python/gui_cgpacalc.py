@@ -21,7 +21,7 @@ egpa=IntVar()
 egpa1=IntVar()
 
 
-l=Label(f,text='Sem 1',fg='black',bg='darkgray')
+l=Label(f,text='1st Semester',fg='black',bg='darkgray')
 l.place(x=20,y=35)
 l1=Label(f,text='Subject 1',fg='black',bg='darkgray')
 l1.place(x=20,y=70)
