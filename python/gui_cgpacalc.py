@@ -209,20 +209,16 @@ def calculategpa2():
     credits1.append(int(eval(g24.get())))
     tsum1 = 0
     sum_credits1 = 0
-    for i in range(0,6):
-        if(grades1[i]=='O'):
-            tsum1=tsum1+10*credits1[i]
-        elif(grades1[i]=='A+'):
-            tsum1=tsum1+9*credits1[i]
-        elif(grades1[i]=='A'):
-            tsum1=tsum1+8*credits1[i]
-        elif(grades1[i]=='B+'):
-            tsum1=tsum1+7*credits1[i]
-        elif(grades1[i]=='B'):
-            tsum1=tsum1+6*credits1[i]
-        elif(grades1[i]=='C'):
+    for i in range(0,4):
+        if(grades1[i]=='A'):
             tsum1=tsum1+5*credits1[i]
-        elif(grades1[i]=='E'):
+        elif(grades1[i]=='B'):
+            tsum1=tsum1+4*credits1[i]
+        elif(grades1[i]=='c'):
+            tsum1=tsum1+3*credits1[i]
+        elif(grades1[i]=='D'):
+            tsum1=tsum1+2*credits1[i]
+        elif(grades1[i]=='F'):
             tsum1 = tsum1 + 0*credits1[i]
         elif (grades1[i] == ''):
             messagebox.showinfo('Empty grade', "please enter grade")
@@ -234,9 +230,9 @@ def calculategpa2():
     for j in range(0,6):
         sum_credits1 = sum_credits1 + credits1[j]
 
-    tgpa2=tsum1/sum_credits1
-    etgpa1=Label(bg='white', fg='black', borderwidth=1, relief='solid',width=20,text=tgpa2)
-    etgpa1.place(x=335, y=300)
+    gpa2=tsum1/sum_credits1
+    egpa1=Label(bg='white', fg='black', borderwidth=1, relief='solid',width=20,text=gpa2)
+    egpa1.place(x=335, y=300)
 
 
 
