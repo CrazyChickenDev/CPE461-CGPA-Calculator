@@ -67,7 +67,7 @@ while i >100 or i <0:
 
 scores = [a, b, c, d, e, f, g, h, i]
 n = 0
-points = [0, 0, 0, 0, 0, 0, 0, 0, 0]
+points = [0, 0, 0, 0, 0, 0, 0]
 while n <=6:
     if scores[n] >=70 and scores[n] <=100:
         points[n] = 5
@@ -82,10 +82,10 @@ while n <=6:
     elif scores[n] >= 0 and scores[n] <=39:
         points[n] = 0
     n+=1
-    
+
 units = [5, 4, 4, 1, 1, 1, 0]
 global totalpoints
-totalpoints = [0, 0, 0, 0, 0, 0, 0, 0, 0]
+totalpoints = [0, 0, 0, 0, 0, 0, 0]
 c=0
 while c<=6:
     totalpoints[c]=units[c]*points[c]
