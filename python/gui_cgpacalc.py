@@ -139,6 +139,14 @@ g27 = Entry(f,bg='white',fg='black',borderwidth=1,relief='solid')
 g27.place(x=150,y=370,width=35)
 g28 = Entry(f,bg='white',fg='black',borderwidth=1,relief='solid')
 g28.place(x=185,y=370,width=35)
+g29 = Entry(f,bg='white',fg='black',borderwidth=1,relief='solid')
+g29.place(x=150,y=390,width=35)
+g30 = Entry(f,bg='white',fg='black',borderwidth=1,relief='solid')
+g30.place(x=185,y=390,width=35)
+g31 = Entry(f,bg='white',fg='black',borderwidth=1,relief='solid')
+g31.place(x=150,y=410,width=35)
+g32 = Entry(f,bg='white',fg='black',borderwidth=1,relief='solid')
+g32.place(x=185,y=410,width=35)
 
 
 
