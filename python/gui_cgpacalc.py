@@ -85,6 +85,7 @@ g15.place(x=150,y=230,width=35)
 
 
 
+
 #2nd Semester
 id = c.create_line(0, 210, 600, 210, width=1, fill='black')
 c.pack()
