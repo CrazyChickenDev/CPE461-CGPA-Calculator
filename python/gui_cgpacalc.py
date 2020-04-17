@@ -186,7 +186,7 @@ def calculategpa1():
 
     tsum = 0
     sum_credits = 0
-    for i in range(0,5):
+    for i in range(0,4):
         if(grades[i]=='A'):
             tsum=tsum+5*credits[i]
         elif(grades[i]=='B'):
