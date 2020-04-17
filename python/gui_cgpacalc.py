@@ -6,7 +6,7 @@ from math import *
 root=Tk()
 
 #set window title
-root.title('CP461 CGPA CALCULATOR')
+root.title('CPE461 CGPA CALCULATOR')
 
 #created canvas as a child to root window
 f=Frame(root,height=500,width=800,bg='darkgray')
@@ -202,7 +202,7 @@ def calculategpa1():
             goto(41)
         else:
             messagebox.showinfo('Invalid grade', "please enter a valid grade")
-            goto(52)
+            goto(41)
 
     for j in range(0,6):
         sum_credits = sum_credits + credits[j]
