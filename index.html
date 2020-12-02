@@ -1,71 +1,118 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html>
 <head>
-	<meta charset="UTF-8">
-	<title>CPE461 CGPA Calculator</title>
-	<link rel="icon" href="dist/UI/fav.png" type="">
-	<link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-	<link id="appStyleSheet" rel="stylesheet" href="dist/styles/app.css">	
-	<script src="dist/scripts/calculator.js" defer></script>
-</head>
+	<title>CGPA Calcl</title>
 
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+
+    <script src="js/main.js" type="text/javascript"></script>
+</head>
 <body>
 
-	<div class="calc_wrapper">
-		<div class="calbody mt-3">
-			<div class="caph">
-				<h1>CPE461 CGPA Calculator</a></h1>
-			</div>
-			<div id="demoo">
-				<div class="row">
-					<select name="semester_select" id="semester_select" class="form-control mb-3">
-						<option value="0" disabled selected>--Select number of Semester--</option>
-						<option value="1">1</option>
-						<option value="2">2</option>
-						<option value="3">3</option>
-						<option value="4">4</option>
-						<option value="5">5</option>
-						<option value="6">6</option>
-						<option value="7">7</option>
-						<option value="8">8</option>
-						<option value="9">9</option>
-						<option value="10">10</option>
-						<option value="11">11</option>
-					</select>
-					<div class="col p-1 box1">
-						<div id="calform" class="text-center"></div>
-						<div id="checkb" class="mb-2 mt-2">
-							<input type="checkbox" id="diustd"><label for="diustd" class="studentask">Are you from
-								CPE'16(22) batch?.</label for="diustd">
-						</div>
-						<button type="button" id="cal-btn" class="btn-block btn d-inline-block cal_btn"
-							value="">Calculate</button>
-					</div>
-				</div>
-				<div class="row">
-					<div class="col box2">
-						<div id="resultbox" class="font-weight-bold"><span id="result" class="font-weight-bold"></span>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-		<div class="co">
-			<p class="pco">Built by <a href="https://github.com/crazychickendev/" target="_blank">Nwaobi Daniel</a></p>
-			<span class="theme-check">
-				<button id="lightThemeCheck">Light Mode</button>
-				<button id="darkThemeCheck">Dark Mode</button>
-			</span>
-		</div>
-	</div>
-	<div class="lower-third">
-		<p>Give a Star in GitHub Repository. <a href="https://github.com/CrazyChickenDev/CPE461-CGPA-Calculator" target="_blank">Go</a></p>
-		<div id="lower-close">
-			<span id="lower-close-btn">&times;</span>
-		</div>
-	</div>
-</body>
+	<header>
+		<h1 style="text-align: center;">GPA Calculator</h1>
+	</header>
 
+	<main>
+		<section class="section-con">
+			<form name="formBody" id="formdata" method="post" onSubmit="addUpCreditsGpa; return false">
+				<table class="table-con">
+					<thead>
+						<tr>
+							<td>Course</td>
+							<td>Unit</td>
+							<td>Grade</td>
+						</tr>
+					</thead>
+					<tbody id="tableBody">
+						<tr>
+							<td>
+								<input type="text" name="courseCode" class="code-input">
+							</td>
+							<td>
+								<select name="creditUnit" class="select" onchange="addUpCreditsGpa()">
+									<option value="6">6</option>
+									<option value="5">5</option>
+									<option value="4">4</option>
+									<option value="3">3</option>
+									<option value="2">2</option>
+									<option value="1">1</option>
+								</select>
+							</td>
+							<td>
+								<select name="grade" class="select" onchange="addUpCreditsGpa()">
+									<option value="A">A</option>
+									<option value="B">B</option>
+									<option value="C">C</option>
+									<option value="D">D</option>
+									<option value="E">E</option>
+									<option value="F">F</option>
+								</select>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<input type="text" name="courseCode" class="code-input">
+							</td>
+							<td>
+								<select name="creditUnit" class="select" onchange="addUpCreditsGpa()">
+									<option value="6">6</option>
+									<option value="5">5</option>
+									<option value="4">4</option>
+									<option value="3">3</option>
+									<option value="2">2</option>
+									<option value="1">1</option>
+								</select>
+							</td>
+							<td>
+								<select name="grade" class="select" onchange="addUpCreditsGpa()">
+									<option value="A">A</option>
+									<option value="B">B</option>
+									<option value="C">C</option>
+									<option value="D">D</option>
+									<option value="E">E</option>
+									<option value="F">F</option>
+								</select>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</form>
+			
+		</section>
+		<section class="section-con">
+			<button form="formdata" onclick="addNewRow()">&nbsp;&nbsp;&nbsp;Add&nbsp;&nbsp;</button>
+			<button form="formresult" onclick="addUpCreditsGpa()">Calculate</button>
+		</section>
+		<section class="section-con">
+			<form id="formresult" name="results" method="post" onSubmit="return false">
+				<table class="table-con-result">
+					<thead>
+						<tr>
+							<td>Total CU</td>
+							<td>GPA</td>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>
+								<input type="text" name="totalUnit" class="result-input" onchange="addUpCreditsGpa()">
+							</td>
+							<td>
+								<input type="text" name="gpa" class="result-input" onchange="addUpCreditsGpa()">
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</form>
+		</section>
+	</main>
+
+	<footer class="footer">
+		<p> &copy; 2020. Made with love by <a href="https://github.com/mdjibril">mdjibril</a></p>
+	</footer>
+</body>
 </html>
