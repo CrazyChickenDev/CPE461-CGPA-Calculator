@@ -122,7 +122,7 @@ function gradeToPoints(grade) {
         return 0.0;
     }
     else {
-        //XXX! Should we throw an exception here?
+        //Guess we should we throw an exception here?
         return Invalid;
     }
 }
