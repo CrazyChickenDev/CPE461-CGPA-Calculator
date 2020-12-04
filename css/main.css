@@ -49,14 +49,14 @@ body {
 .code-input {
 	width: 80px;
 	padding: 5px;
-	border: 1px solid #4caf50;
+	border: 1px solid #CC99CC;
 	margin: 5px;
 }
 
 .result-input {
 	width: 120px;
 	padding: 5px;
-	border: 1px solid #4caf50;
+	border: 1px solid #CC99CC;
 	margin: 5px;
 }
 
@@ -64,7 +64,7 @@ body {
 	width: 80px;
 	padding: 5px;
 	margin: 5px;
-	border: 1px solid #4caf50;
+	border: 1px solid #CC99CC;
 }
 
 button {
