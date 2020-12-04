@@ -2,14 +2,15 @@ main {
 	margin: 20px;
 	padding: 5px;
 	display: block;
-	color: yellow;
+	color: black;
+	font-family: 'Cursive', sans-serif;
 }
 
 body {
 	background-image: linear-gradient(to top right, #3f51b5, #e91e63);
 	min-height: 100vh;
 	margin: 0;
-	font-family: 'Secular One', sans-serif;
+	font-family: 'Cursive', sans-serif;
   }
 
 .section-con {
