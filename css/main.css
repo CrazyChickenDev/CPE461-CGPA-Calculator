@@ -22,9 +22,9 @@ body {
 	border-spacing: 0;
 	width: 100%;
 	border: none;
-	border-left: 2px solid #4caf50;
-	border-right: 2px solid #4caf50;
-	border-top: 2px solid #4caf50;
+	border-left: 2px solid yellow;
+	border-right: 2px solid yellow;
+	border-top: 2px solid yellow;
 }
 
 .table-con-result{
@@ -33,9 +33,9 @@ body {
 	border-spacing: 0;
 	width: 100%;
 	border: none;
-	border-left: 2px solid #4caf50;
-	border-right: 2px solid #4caf50;
-	border-bottom: 2px solid #4caf50;
+	border-left: 2px solid yellow;
+	border-right: 2px solid Yellow;
+	border-bottom: 2px solid Yellow;
 }
 
 .table-con > thead, .table-con-result > thead {
@@ -65,9 +65,9 @@ body {
 }
 
 button {
-	background-color: #4caf50; /* Green */
+	background-color: yellow; /* Green */
   	border: none;
-  	color: white;
+  	color: black;
   	padding: 10px 30px;
   	text-align: center;
   	text-decoration: none;
@@ -78,6 +78,6 @@ button {
 }
 
 .footer {
-	color: #4caf50;
+	color: black;
 	text-align: center;
 }
