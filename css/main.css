@@ -7,7 +7,7 @@ main {
 }
 
 body {
-	background-image: linear-gradient(to top right,white, navy);
+	background-image: linear-gradient(to top right, white, white);
 	min-height: 100vh;
 	margin: 0;
 	font-family: 'Cursive', sans-serif;
