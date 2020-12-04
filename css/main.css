@@ -20,25 +20,25 @@ body {
 }
 
 .table-con{
-	margin-top: 8px; 
+	margin-top: 16px; 
 	border-collapse: collapse;
 	border-spacing: 0;
 	width: 100%;
 	border: none;
-	border-left: 2px solid #CC99CC;
-	border-right: 2px solid #CC99CC;
-	border-top: 2px solid #CC99CC;
+	border-left: 3px solid #CC99CC;
+	border-right: 3px solid #CC99CC;
+	border-top: 3px solid #CC99CC;
 }
 
 .table-con-result{
-	margin-top: 8px; 
+	margin-top: 16px; 
 	border-collapse: collapse;
 	border-spacing: 0;
 	width: 100%;
 	border: none;
-	border-left: 2px solid #CC99CC;
-	border-right: 2px solid #CC99CC;
-	border-bottom: 2px solid #CC99CC;
+	border-left: 3px solid #CC99CC;
+	border-right: 3px solid #CC99CC;
+	border-bottom: 3px solid #CC99CC;
 }
 
 .table-con > thead, .table-con-result > thead {
@@ -77,7 +77,7 @@ button {
   	display: inline-block;
   	font-size: 16px;
   	margin-left: 10px;
-  	margin-top: 5px;
+	margin-top: 5px;
 }
 
 .footer {
