@@ -17,6 +17,7 @@ body {
 .section-con {
 	display: flex;
 	justify-content: center;
+    width: 90%;
     
 }
 
@@ -24,7 +25,7 @@ body {
 	margin-top: 16px; 
 	border-collapse: collapse;
 	border-spacing: 0;
-	width: 100%;
+	width: 150%;
 	border: none;
 	border-left: 3px solid #CC99CC;
 	border-right: 3px solid #CC99CC;
@@ -35,7 +36,7 @@ body {
 	margin-top: 16px; 
 	border-collapse: collapse;
 	border-spacing: 0;
-	width: 100%;
+	width: 150%;
 	border: none;
 	border-left: 3px solid #CC99CC;
 	border-right: 3px solid #CC99CC;
@@ -77,7 +78,8 @@ button {
   	text-decoration: none;
   	display: inline-block;
   	font-size: 16px;
-  	margin-left: 10px;
+	margin-left: 80px;
+	margin-right: -50px;
 	margin-top: 5px;
 	border-style: outset;
 	border-color: #CC99CC;
