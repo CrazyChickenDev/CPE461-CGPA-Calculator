@@ -11,12 +11,13 @@ body {
 	min-height: 100vh;
 	margin: 0;
 	font-family: 'Cursive', sans-serif;
-	font-size: 25px;
+	font-size: 20px;
   }
 
 .section-con {
 	display: flex;
 	justify-content: center;
+    
 }
 
 .table-con{
@@ -78,6 +79,8 @@ button {
   	font-size: 16px;
   	margin-left: 10px;
 	margin-top: 5px;
+	border-style: outset;
+	border-color: #CC99CC;
 }
 
 .footer {
