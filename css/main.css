@@ -11,7 +11,7 @@ body {
 	min-height: 100vh;
 	margin: 0;
 	font-family: 'Cursive', sans-serif;
-	font-size: 30px;
+	font-size: 25px;
   }
 
 .section-con {
@@ -25,9 +25,9 @@ body {
 	border-spacing: 0;
 	width: 100%;
 	border: none;
-	border-left: 2px solid yellow;
-	border-right: 2px solid yellow;
-	border-top: 2px solid yellow;
+	border-left: 2px solid #CC99CC;
+	border-right: 2px solid #CC99CC;
+	border-top: 2px solid #CC99CC;
 }
 
 .table-con-result{
@@ -36,9 +36,9 @@ body {
 	border-spacing: 0;
 	width: 100%;
 	border: none;
-	border-left: 2px solid yellow;
-	border-right: 2px solid Yellow;
-	border-bottom: 2px solid Yellow;
+	border-left: 2px solid #CC99CC;
+	border-right: 2px solid #CC99CC;
+	border-bottom: 2px solid #CC99CC;
 }
 
 .table-con > thead, .table-con-result > thead {
@@ -68,9 +68,9 @@ body {
 }
 
 button {
-	background-color: yellow; /* Green */
+	background-color: #660066;
   	border: none;
-  	color: black;
+  	color: white;
   	padding: 10px 30px;
   	text-align: center;
   	text-decoration: none;
