@@ -1,5 +1,5 @@
 body {
-	background-image: linear-gradient(to top right, #3f51b5, #e91e63);
+	background-image: url("images.jpg");
     min-height: 150vh;
     margin: 3%;
 	font-family: 'Secular One', sans-serif;
@@ -14,7 +14,7 @@ main {
 	font-family: 'Secular One', sans-serif;
 	width: 50%;
 	height: 50px;
-	min-height: 50vh;
+	min-height: 100vh;
 	background-color: white;
 	margin: 5vh auto;
 	border-radius: 12px;
