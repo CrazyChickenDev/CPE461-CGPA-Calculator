@@ -1,31 +1,31 @@
 body {
 	background-image: linear-gradient(to top right, #3f51b5, #e91e63);
     min-height: 150vh;
-    margin: 0;
+    margin: 3%;
 	font-family: 'Secular One', sans-serif;
 	font-size: 23px;
 	color: #ffffff;
 }
 
 main {
-	margin: 10px;
 	padding: 5px;
 	display: block;
 	color: black;
-	font-family: 'Cursive', sans-serif;
+	font-family: 'Secular One', sans-serif;
 	width: 50%;
 	height: 50px;
-	min-height: 80vh;
+	min-height: 50vh;
 	background-color: white;
-	margin: 10vh auto;
+	margin: 5vh auto;
 	border-radius: 12px;
 	box-shadow: 5px 5px 20px 0px rgba(0, 0, 0, 0.5);
+	border-collapse: collapse;
 }
 
 .section-con {
 	display: flex;
 	justify-content: center;
-    width: 90%;
+    width: 80%;
     
 }
 
@@ -97,5 +97,6 @@ button {
 	color: #ffffff;
 	text-align: center;
 	font-family: 'Cursive', sans-serif;
-	font-size: 15px;
+	font-size: 16px;
+    cursor: pointer;
 }
