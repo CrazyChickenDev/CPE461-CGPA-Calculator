@@ -1,18 +1,26 @@
+body {
+	background-image: linear-gradient(to top right, #3f51b5, #e91e63);
+    min-height: 150vh;
+    margin: 0;
+	font-family: 'Secular One', sans-serif;
+	font-size: 23px;
+	color: #ffffff;
+}
+
 main {
-	margin: 20px;
+	margin: 10px;
 	padding: 5px;
 	display: block;
 	color: black;
 	font-family: 'Cursive', sans-serif;
+	width: 50%;
+	height: 50px;
+	min-height: 80vh;
+	background-color: white;
+	margin: 10vh auto;
+	border-radius: 12px;
+	box-shadow: 5px 5px 20px 0px rgba(0, 0, 0, 0.5);
 }
-
-body {
-	background-image: linear-gradient(to top right, white, white);
-	min-height: 100vh;
-	margin: 0;
-	font-family: 'Cursive', sans-serif;
-	font-size: 20px;
-  }
 
 .section-con {
 	display: flex;
@@ -86,7 +94,7 @@ button {
 }
 
 .footer {
-	color: black;
+	color: #ffffff;
 	text-align: center;
 	font-family: 'Cursive', sans-serif;
 	font-size: 15px;
